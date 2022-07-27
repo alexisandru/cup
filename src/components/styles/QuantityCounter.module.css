@@ -36,3 +36,14 @@
 	cursor: pointer;
 	
 }
+
+.to_cart_disable {
+	font-size: 0.8em;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 1px solid #F1EFEF;
+	justify-self: flex-end;
+	cursor: pointer;
+	
+}

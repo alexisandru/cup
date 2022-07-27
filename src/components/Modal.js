@@ -1,16 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import style from './styles/Modal.module.css'
+
 
 const Modal = ({show, carrito, data}) => {
 
 
 	const items = carrito.map(item => {
 		const encontrado = data.find(i => i.id === item.id);
-
+		const logo = require(`../assets/compreso/${encontrado.image}`)
 		return (
 			<div className={style.item}>
-				<img className={style.image} src={encontrado.image} alt="."/>
+				<img className={style.image} src={logo} alt="."/>
 				<div className={style.description}>
 					<p>Nombre: {encontrado.name}</p>
 					<p>Cantidad: {item.cant}</p>	

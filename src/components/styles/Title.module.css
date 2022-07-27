@@ -1,6 +1,5 @@
 .container {
-
-	background-image:linear-gradient(to right,  rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/header3.jpg");
+	background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../../assets/images/header3.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -20,6 +19,7 @@
 }
 
 
+
 .title {
 	font-size: 3em;
 }
@@ -35,7 +35,7 @@
 		height: 500px;
 
 
-		background-image:linear-gradient(to right,  rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/header3.jpg");
+		background-image:linear-gradient(to right,  rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../../assets/images/header3.jpg");
 		background-position: 100% auto;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -43,5 +43,5 @@
 
 	.title {
 
-	}
+	}	
 }

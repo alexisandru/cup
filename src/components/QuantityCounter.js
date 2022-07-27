@@ -27,7 +27,11 @@ const QuantityCounter = ({handle}) => {
 				<p className={style.counter_num}>{cant}</p>
 				<button className={style.counter_btn} onClick={() => increment()}>+</button>
 			</div>
-			<button className={style.to_cart} onClick={() => handleCarrito()}>Añadir al carro</button>
+			{cant === 0 
+				?<button className={style.to_cart_disable}>Añadir al carro</button>
+				:<button className={style.to_cart} onClick={() => handleCarrito()}>Añadir al carro</button>
+			}
+			
 		</div>
 	)
 }
