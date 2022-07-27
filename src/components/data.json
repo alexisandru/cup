@@ -1,0 +1,68 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"name": "Cream Cupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 100.0,
+			"image": "./images/cup1.jpg"
+		},
+		{
+			"id": 2,
+			"name": "Ferrero Cupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 150.0,
+			"image": "./images/cup2.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Cherry Cupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 110.0,
+			"image": "./images/cup3.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Fest Cupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 130.0,
+			"image": "./images/cup4.jpg"
+		},
+		{
+			"id": 5,
+			"name": "Red Cupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 100.0,
+			"image": "./images/cup5.jpg"
+		},
+		{
+			"id": 6,
+			"name": "Chocolate Cupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 200.0,
+			"image": "./images/cup6.jpg"
+		},
+		{
+			"id": 7,
+			"name": "RaspberryCupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 53.0,
+			"image": "./images/cup7.jpg"
+		},
+		{
+			"id": 8,
+			"name": "RoseCupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 50.0,
+			"image": "./images/cup8.jpg"
+		},
+		{
+			"id": 9,
+			"name": "Flower Cupcake",
+			"description": "underhabit dilli downwith husband parapteral overburden pyronyxis overgenerally",
+			"price": 55.0,
+			"image": "./images/cup9.jpg"
+		}
+		
+	]
+}
