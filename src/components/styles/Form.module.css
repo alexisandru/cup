@@ -1,0 +1,104 @@
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	background-color: #fff;
+	min-width: 50%;
+	max-height: 70%;
+	border-radius: 10px;
+	padding: 20px 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.content > h4 {
+	font-size: 1.5em;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.form > label {
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+.form > input {
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	margin-top: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 30px;
+}
+
+.button {
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 5px;
+	font-size: 1em;
+	cursor: pointer;
+	color: #000;
+}
+
+.buttonComprar {
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 5px;
+	font-size: 1em;
+	background-color: #302F2F;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.finish {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 10px;
+}
+
+.done {
+	width: 90px;
+}
+
+.done_title {
+	font-size: 1.5em;
+	font-weight: 600; 
+}
+
+.done_s {
+	margin-top: 10px;
+	font-size: 1.1em;
+}
+
+
+@media screen and (max-width: 650px) {
+	.content {
+		width: 90%;
+		max-height: 90%;
+		padding: 20px 15px;
+	}
+
+	.form {
+		overflow: scroll;
+	}
+}

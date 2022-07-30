@@ -1,18 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import Header from './Header'
-import Cards from './Cards'
 import Title from './Title'
+import Navbar from './Navbar'
+import Cards from './Cards'
 
 import style from './styles/Home.module.css'
 
 const Home = () => {
+  const [type, setType] = useState("cupcake");
+
+  const handleTab = (tab) => {
+    setType(tab)
+  }
+
   return (
     <div className={style.container}>
       <Header />
-      <Title />
-      <p className={style.products}>Products</p>
-      <Cards />
+      <Title />  
+      <Navbar tab={handleTab}/>
+      <Cards tab={type}/>
     </div>
   )
 }
