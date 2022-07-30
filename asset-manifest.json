@@ -1,25 +1,36 @@
 {
   "files": {
-    "main.css": "/cup/static/css/main.b49ad93e.css",
-    "main.js": "/cup/static/js/main.7ce9a225.js",
-    "static/media/header3.jpg": "/cup/static/media/header3.3d54ba4b886d1caef735.jpg",
+    "main.css": "/cup/static/css/main.1c6b6995.css",
+    "main.js": "/cup/static/js/main.a87b4170.js",
     "static/media/cup2.jpg": "/cup/static/media/cup2.1056c9d6ad0fc92905e3.jpg",
     "static/media/cup4.jpg": "/cup/static/media/cup4.0efeb775d9b8a1fba921.jpg",
     "static/media/cup3.jpg": "/cup/static/media/cup3.706ce8ea3c338fec2cc1.jpg",
+    "static/media/header3.jpg": "/cup/static/media/header3.3d54ba4b886d1caef735.jpg",
     "static/media/cup1.jpg": "/cup/static/media/cup1.0428abdb1727367b9c2d.jpg",
     "static/media/cup5.jpg": "/cup/static/media/cup5.45e29435c7e990457837.jpg",
+    "static/media/cake4.jfif": "/cup/static/media/cake4.6d129a7a3fa3c0fcff7b.jfif",
+    "static/media/cake8.jpg": "/cup/static/media/cake8.aeee0b860ca6598666f2.jpg",
     "static/media/cup6.jpg": "/cup/static/media/cup6.16ef106529400cec6cb4.jpg",
+    "static/media/cake10.jpg": "/cup/static/media/cake10.43a3e37c7976696deb87.jpg",
+    "static/media/cake2.jfif": "/cup/static/media/cake2.9a2d1c35300ddb6c966c.jfif",
     "static/media/cup9.jpg": "/cup/static/media/cup9.e0d290f04ab17eceff43.jpg",
     "static/media/cup9.webp": "/cup/static/media/cup9.3ff8916328ac0ce94033.webp",
+    "static/media/cake6.jfif": "/cup/static/media/cake6.6d37edcebf314a787637.jfif",
     "static/media/cup7.jpg": "/cup/static/media/cup7.f7e9de72bdf52629af60.jpg",
     "static/media/cup8.jpg": "/cup/static/media/cup8.e8dd7678cbe296ba01bb.jpg",
+    "static/media/cake3.jpg": "/cup/static/media/cake3.1d0634c6917673e0777a.jpg",
+    "static/media/cake9.jpg": "/cup/static/media/cake9.888e24113563bff2e40b.jpg",
+    "static/media/cake7.jpg": "/cup/static/media/cake7.eb889cd8ad8e1e8911f1.jpg",
+    "static/media/cake1.jpg": "/cup/static/media/cake1.8f15d3ca8766b247107a.jpg",
     "index.html": "/cup/index.html",
     "static/media/carrito.svg": "/cup/static/media/carrito.39666229bdedcd3ba9e0d1c6954e2ece.svg",
-    "main.b49ad93e.css.map": "/cup/static/css/main.b49ad93e.css.map",
-    "main.7ce9a225.js.map": "/cup/static/js/main.7ce9a225.js.map"
+    "static/media/done.svg": "/cup/static/media/done.aa0a208ac7ceea63d93ea0bae6ad7313.svg",
+    "static/media/expand.svg": "/cup/static/media/expand.c97583a7a6649661b18b461f273616f3.svg",
+    "main.1c6b6995.css.map": "/cup/static/css/main.1c6b6995.css.map",
+    "main.a87b4170.js.map": "/cup/static/js/main.a87b4170.js.map"
   },
   "entrypoints": [
-    "static/css/main.b49ad93e.css",
-    "static/js/main.7ce9a225.js"
+    "static/css/main.1c6b6995.css",
+    "static/js/main.a87b4170.js"
   ]
 }
