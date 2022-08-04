@@ -32,6 +32,7 @@ const Card = ({info}) => {
 			<ProgressiveImg 
 				src={logo}
 				placeholderSrc={gris}
+				onClick={() => handleModal("block")}
 			/>
 			<img 
 				className={style.openImage} 
