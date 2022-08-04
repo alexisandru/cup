@@ -2,16 +2,24 @@ import React, {useState} from 'react'
 import style from './styles/Form.module.css'
 import done from '../assets/done.svg'
 
-const Form = ({closeForm}) => {
+
+import { finish, clearCart } from '../actions'
+import { useDispatch} from 'react-redux'
+
+const Form = () => {
 	const [finishBuy, setFinishBuy] = useState(false)
+	const dispatch = useDispatch()
 
 	const showFinishBuy = (e) => {
 		e.preventDefault()
 		setFinishBuy(true)
-		setTimeout(() => closeForm(true), 5000)
-
+		setTimeout(() => clearbuy(), 5000)
 	}
 
+	const clearbuy = () => {
+		dispatch(clearCart())
+		dispatch(finish(false))
+	}
 	return (
 		<div className={style.container}>
 			<div className={style.content}>
@@ -29,7 +37,7 @@ const Form = ({closeForm}) => {
 							<label>Mensaje</label>
 							<input type="text" name="message" id="message" />
 							<div className={style.buttons}>
-								<button className={style.button} onClick={() => closeForm(false)}>Cancelar</button>
+								<button className={style.button} onClick={() => dispatch(finish(false))}>Cancelar</button>
 								<button className={style.buttonComprar} onClick={showFinishBuy}>Enviar</button>
 							</div>
 						</form>

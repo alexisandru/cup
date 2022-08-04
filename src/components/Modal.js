@@ -2,13 +2,20 @@ import React from 'react'
 
 import style from './styles/Modal.module.css'
 
-const Modal = ({show, carrito, data, deleteCart, finish}) => {
+import {removeCart, closeModal, finish} from '../actions'
+import {useSelector, useDispatch} from 'react-redux'
 
-	const items = carrito.map(item => {
+const Modal = () => {
+	const dispatch = useDispatch()
+
+	const cartItems = useSelector(state => state.cart)
+	const data = useSelector(state => state.items)
+	
+	const items = cartItems.map(item => {
 		const encontrado = data.find(i => i.id === item.id);
 		const logo = require(`../assets/compreso/${encontrado.image}`)
 		return (
-			<div className={style.item}>
+			<div className={style.item} key={item.id}>
 				<img className={style.image} src={logo} alt="."/>
 				<div className={style.description}>
 					<p>{encontrado.name}</p>
@@ -18,11 +25,15 @@ const Modal = ({show, carrito, data, deleteCart, finish}) => {
 					<p className={style.price}>${encontrado.price * item.cant}</p>
 					<p className={style.priceUnit}>${encontrado.price}c/u</p>
 				</div>
-				<span className={style.close} onClick={() => deleteCart(item.id)}>&times;</span>
+				<span className={style.close} onClick={() => dispatch(removeCart(item.id))}>&times;</span>
 			</div>
 		)
 	})
 
+	const handleFinish = () => { 
+		dispatch(closeModal())
+		dispatch(finish(true))
+	}
 	
 	return (
 		<div className={style.container}>
@@ -35,8 +46,8 @@ const Modal = ({show, carrito, data, deleteCart, finish}) => {
 				</div>
 				
 				<div className={style.buttons}>
-					<button className={style.button} onClick={() => show(false)}>Cerrar</button>
-					<button className={items.length !== 0 ? style.btnComprar : style.btnComprar_disable} onClick={finish}>Comprar ahora</button>	
+					<button className={style.button} onClick={() => dispatch(closeModal())}>Cerrar</button>
+					<button className={items.length !== 0 ? style.btnComprar : style.btnComprar_disable} onClick={() => handleFinish()}>Comprar ahora</button>	
 				</div>
 			</div>
 		</div>

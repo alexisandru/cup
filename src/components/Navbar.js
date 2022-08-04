@@ -1,24 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import style from './styles/Navbar.module.css'
 
-const Navbar = (props) => {
-	
-	const [tab, setTab] = useState("cupcake");
+import {useDispatch, useSelector} from 'react-redux'
+import {setTab} from '../actions'
 
-	const changeTab = (e) => {
-		setTab(e)
-		props.tab(e)
-	}
+const Navbar = (props) => {
+	const dispatch = useDispatch()
+	const tab = useSelector(state => state.tab)
 
 	return (
 		<div className={style.container}>
 			<button 
 				className={tab === "cupcake" ? style.button_active : style.button } 
-				onClick={() => changeTab("cupcake")}
+				onClick={() => dispatch(setTab(("cupcake")))}
 			>Cupcakes</button>
 			<button 
 				className={tab === "cake" ? style.button_active : style.button } 
-				onClick={() => changeTab("cake")}
+				onClick={() => dispatch(setTab(("cake")))}
 			>Cakes</button>
 		</div>
 

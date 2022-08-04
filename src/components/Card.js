@@ -7,12 +7,18 @@ import style from './styles/Card.module.css'
 import gris from '../assets/compreso/gris.jpg'
 import expand from '../assets/expand.svg'
 
-const Card = ({addMore, info}) => {
+import {useDispatch} from 'react-redux'
+import {addCart} from '../actions'
+
+const Card = ({info}) => {
+	const dispatch = useDispatch()
+
 	const refModal = useRef(0)
 
 	const handleCant = (e) => {
 		let data = {id: info.id, cant: e}
-		addMore(data)
+		// added redux
+		dispatch(addCart(data))
 	}
 
 	const handleModal = (state) => {
@@ -27,7 +33,12 @@ const Card = ({addMore, info}) => {
 				src={logo}
 				placeholderSrc={gris}
 			/>
-			<img className={style.openImage} src={expand} alt="." onClick={() => handleModal("block")}/>
+			<img 
+				className={style.openImage} 
+				src={expand} 
+				alt="." 
+				onClick={() => handleModal("block")}
+			/>
 
 			<div className={style.modal} ref={refModal}>
 				<span onClick={()=>handleModal("none")} className={style.close}>&times;</span>
